@@ -8,18 +8,140 @@
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+.body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: flex;
+  position: relative;
+  z-index: -1;
+  background-color: #F2F2F2;
+  color: black;
   /* parameters for the header section */
 }
-
+.title {
+  margin: auto;
+  width: 730px;
+  color: black;
+  margin-right: 64px;
+  justify-content: center;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.header__logo_header {
+  background-image: url(../images/logo_place_header.png);
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  width: 154px;
+  height: 31px;
+  z-index: 3;
+}
+.header-link {
+  width: 730px;
+  color: black;
+  margin-right: 64px;
+  justify-content: center;
+}
+.header__title {
+  width: 730px;
+  color: black;
+  left: 64px;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 102px;
+  height: 96px;
+  font-weight: bold;
+}
+.header__full-subtitle {
+  text-align: left;
+  position: absolute;
+  font-size: 18px;
+  bottom: 30px;
+  left: 64px;
+  height: 25px;
+  font-weight: normal;
+}
+.header-link {
+  color: #2F80ED;
+  font-size: 18px;
+  position: absolute;
+  margin-right: 64px;
+  justify-content: left;
+  bottom: 30px;
+  left: 64px;
+  height: 25px;
+  font-weight: normal;
+}
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2F80ED;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: 64px;
+
+}
+.header__main-illustration {
+  bottom: 0;
+  right: 0;
+  width: 756px;
+  height: 608px;
+  align-self: baseline;
+  position: absolute;
+  background-image: url(../images/header-image.png);
+  z-index: 3;
+}
+
+.content {
+display: block;
+font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  top: 100px;
+  bottom: 100px;
+  color: black;
+  width: 175px;
+  padding: 100px;
+}
+.two-columns__title {
+  width: 80%;
+  min-width: 784px;
+  display: flexbox;
+  position: center;
+}
+.two-columns__brief {
+  width: 175px;
+  top: 0;
+  color: #2F80ED;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal; 
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  color: black;
+  justify-self: space-between 30px;
+}
+.two-columns__paragraph {
+  justify-self: space-between 30px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 /* including elements with key-value modifiers */
